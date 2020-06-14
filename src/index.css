@@ -18,17 +18,38 @@ body{
 
 .inner-container{
   border:solid rgb(212, 212, 212) 2px;
-  width: 50%;
+  width: 90%;
   flex-direction: column;
   text-align: center;
   height: 500px;
-  border-radius: 20px;
-  background: white;
-  box-shadow: rgb(148, 148, 148);
+  -webkit-box-shadow: 2px 2px 23px 2px rgba(227,227,227,1);
+-moz-box-shadow: 2px 2px 23px 2px rgba(227,227,227,1);
+box-shadow: 2px 2px 23px 2px rgba(227,227,227,1);
+background: white;
 }
 
 .search{
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  margin-top: -117px;
+}
+
+img{
+  width: 80%;
+  height: 300px;
+}
+
+.form-control {
+  height: 20px;
+  border-radius: 8px;
+  border: rgb(223, 223, 223) 2px solid;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  flex: ;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
 }
