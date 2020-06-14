@@ -1,8 +1,6 @@
 import React from 'react'
 
-let styles = {
-  textAlign: 'center'
-}
+
 
 const SearchForm = props => {
 
@@ -13,8 +11,7 @@ const SearchForm = props => {
   }
 
   return(
-    <form style={ styles } onSubmit={handleSubmit}>
-      <h1>City Weather Search</h1>
+    <form  onSubmit={handleSubmit}>
       <label htmlFor="query" aria-label="Search for city"></label>
       <input type="search" name="query" placeholder="E.g.: London" required />
       <div>
