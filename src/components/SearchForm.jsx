@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Row,Col,Form,Button} from 'react-bootstrap';
 
 
 const SearchForm = props => {
@@ -11,13 +11,23 @@ const SearchForm = props => {
   }
 
   return(
-    <form  onSubmit={handleSubmit}>
-      <label htmlFor="query" aria-label="Search for city"></label>
-      <input type="search" name="query" placeholder="E.g.: London" required />
-      <div>
-        <input type="submit" value="Search"/>
-      </div>
-    </form>
+
+    <Form className="search" >
+  <Row>
+    <Col>
+      <Form.Control  name="query" placeholder="Search for city" />
+    </Col>
+    <Col>
+      <Button variant="primary" type="submit" onClick={handleSubmit}>
+    Search
+  </Button>
+    </Col>
+  </Row>
+</Form>
+    
+      
+      
+
   )
 }
 
