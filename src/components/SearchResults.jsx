@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {  Link } from "react-router-dom";
 
 const SearchResults = props => {
 
@@ -16,7 +17,8 @@ const SearchResults = props => {
       <h1>Results</h1>
       <ul>
         {
-          cities.map(city => <li key={city.id}>{city.name}</li>)
+          cities.map((city, index) => { 
+            return (<Link><li key={index}>{city.name}</li></Link>)})
         }
       </ul>
     </section>
