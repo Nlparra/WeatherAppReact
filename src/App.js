@@ -1,17 +1,18 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Main from "./components/Main"
+import City from "./components/City"
 
 const App = () => {
   return (
     <Router>
-    <Container>
-      <Switch>
-        {/* <Route path='/city/:cityId' component={City}/> */}
-        <Route exact path='/' component={Main}/>
-        <Route path="/city" component={City}/>
-      </Switch>
-    </Container>
-  </Router>
+      <Route exact path='/'>
+        <Main />
+      </Route>
+      <Route path="/city">
+          <City />
+      </Route>
+    </Router>
   );
 }
 

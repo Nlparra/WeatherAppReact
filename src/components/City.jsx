@@ -2,7 +2,7 @@ import React from 'react'
 
 
 
-const SearchForm = () => {
+const City = () => {
 
 
 
@@ -15,4 +15,4 @@ const SearchForm = () => {
   )
 }
 
-export default SearchForm
+export default City
