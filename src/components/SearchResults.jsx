@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import {  Link } from "react-router-dom";
 
 const SearchResults = props => {
 
@@ -15,9 +16,14 @@ const SearchResults = props => {
     <section>
       <h1>Results</h1>
       <ul>
-        {
-          cities.map(city => <li key={city.id}>{city.name}</li>)
-        }
+        {/* {
+          cities.map((city, index) => { 
+            return (<Link to="/city"><li key={index}>{city.name}</li></Link>)})
+        } */}
+        
+
+        <li><Link to="/city">hello world</Link></li>
+        
       </ul>
     </section>
   )
