@@ -16,13 +16,13 @@ const SearchResults = props => {
     <section>
       <h1>Results</h1>
       <ul>
-        {/* {
+        {
           cities.map((city, index) => { 
-            return (<Link to="/city"><li key={index}>{city.name}</li></Link>)})
-        } */}
+            return (<Link to="/city/"><li key={index}>{city.name}</li></Link>)})
+        }
         
 
-        <li><Link to="/city">hello world</Link></li>
+
         
       </ul>
     </section>

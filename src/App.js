@@ -9,7 +9,7 @@ const App = () => {
       <Route exact path='/'>
         <Main />
       </Route>
-      <Route path="/city">
+      <Route path="/city/:cityId">
           <City />
       </Route>
     </Router>
