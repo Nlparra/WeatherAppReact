@@ -12,18 +12,18 @@ const SearchResults = props => {
       .catch(err => console.log(err))
   }, [props.userInput])
 
+
+
+
+
   return(
-    <section>
+    <section className="search-results">
       <h1>Results</h1>
       <ul>
         {
           cities.map((city, index) => { 
-            return (<Link to="/city/"><li key={index}>{city.name}</li></Link>)})
-        }
-        
-
-
-        
+            return (<li key={index}><Link to={"/city/"+ city.id}>{city.name}</Link></li>)})
+        } 
       </ul>
     </section>
   )

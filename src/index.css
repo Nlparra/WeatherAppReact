@@ -54,3 +54,27 @@ img{
   align-content: center;
   align-items: center;
 }
+
+.search-results{
+  overflow: scroll;
+}
+
+.search-results ul{
+    height: 110px;
+    overflow: scroll;
+}
+
+
+
+.search-results h1,
+.search-results ul{
+  padding-left: 0px;
+}
+
+.search-results li{
+  list-style: none;
+}
+
+a{
+  color: black;
+}
