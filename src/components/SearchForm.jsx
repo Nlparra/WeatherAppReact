@@ -4,18 +4,19 @@ import {Form,Button} from 'react-bootstrap';
 
 const SearchForm = props => {
 
-  const handleSubmit = event => {
+  const handleSearch = event => {
     event.preventDefault()
     let userInput = event.target.value
     props.setUserInput(userInput)
 
   }
 
+
   
   return(
     <Form className="search" >
       <Form.Group >
-        <Form.Control name="query" placeholder="Search for city" onChange={handleSubmit} />
+        <Form.Control name="query" placeholder="Search for city" onChange={handleSearch} />
       <Button variant="primary" type="submit" >
         Submit
       </Button>
