@@ -16,7 +16,7 @@ const SearchForm = props => {
   return(
     <Form className="search" >
       <Form.Group >
-        <Form.Control name="query" placeholder="Search for city" onChange={handleSearch}/>
+        <Form.Control autocomplete="off" name="query" placeholder="Search for city" onChange={handleSearch}/>
 
       </Form.Group>
     </Form>
