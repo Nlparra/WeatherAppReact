@@ -42,11 +42,11 @@ console.log(forecast)
                 </div>
                 <div className="weathercontainer">
                   <span className="subTitles">MaxTemp:</span>
-                  {Math.round(item.max_temp)}
+                  {(Math.round(item.max_temp*1.8)+32)}
                 </div>
                 <div className="weathercontainer">
                   <span className="subTitles">MinTemp: </span>
-                  {Math.round(item.min_temp)}
+                  {(Math.round(item.min_temp*1.8)+32)}
                 </div>
                 <div className="weathercontainer">
                   <span className="subTitles">Weather:</span>
@@ -55,10 +55,10 @@ console.log(forecast)
               </div>
             )
           })}
+          </div>
             <button type="button" onClick={goBack} className="backbutton">
 								Go back
 						</button>
-          </div>
         </div>
       </div>
     </Fragment>

@@ -103,3 +103,37 @@ a{
 .weathercontainer{
   text-align: initial;
 }
+
+@media only screen and (min-width: 768px) {
+
+  .inner-container {
+    border: solid rgb(240, 240, 240) 2px;
+    width: 90%;
+    height: 500px;
+    box-shadow: 2px 2px 23px 2px rgba(227,227,227,1);
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+  
+}
+
+.weathergroup {
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.weatherDiv {
+  margin: 10px;
+  border: solid rgb(206, 206, 206) 1px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+
+
+
+}
