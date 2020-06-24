@@ -8,7 +8,6 @@ const App = () => {
     <Router>
       <Route exact path='/' component={Main}/>
       <Route path="/city/:cityId" component={City}/>
-      <Route render={() => <h1>Not found!</h1>} />
     </Router>
   );
 }
