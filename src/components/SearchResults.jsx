@@ -18,7 +18,6 @@ const SearchResults = props => {
 
   return(
     <section className="search-results">
-      <h1>Results</h1>
       <ul>
         {
           cities.map((city, index) => { 
