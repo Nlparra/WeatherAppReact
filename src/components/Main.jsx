@@ -18,7 +18,6 @@ const Main = () => {
                     userInput && <SearchResults userInput={userInput} />
                   }
           </div>
-          <span>made by :Nlparra.dev </span>
       </div>    
     </Fragment>
   )
