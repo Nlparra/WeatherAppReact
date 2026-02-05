@@ -1,39 +1,44 @@
 # 🌤️ WeatherAppReact
 
-A modern, mobile-first weather application built with **React, Vite, and Tailwind CSS**.  
-It provides current conditions and a multi-day forecast with a clean, glassmorphism-inspired UI.
+WeatherAppReact is a modern, mobile-first weather application built with **React**, **Vite**, and **Tailwind CSS**.  
+It displays current weather conditions and a multi-day forecast with a clean, professional UI.
 
-This project is a full rewrite of an older CRA-based app, upgraded to a modern frontend stack and best practices.
-
----
-
-## ✨ Features
-
-- 🔍 Search weather by city name  
-- 📍 Displays location, current conditions, and forecast  
-- 🌡️ High / low temperatures with weather icons  
-- 🌧️ Chance of rain per day  
-- 🎨 Dynamic background based on weather conditions  
-- ⚡ Fast builds and hot reload with Vite  
-- 📱 Mobile-first, responsive layout  
-- 🧊 Modern glassmorphism UI using Tailwind CSS  
+This project replaces an older Create React App version with a modern frontend stack and best practices.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
+
+- Search weather by city name
+- Current weather conditions with temperature, highs, and lows
+- Multi-day forecast with icons and rain probability
+- Dynamic background based on weather conditions
+- Fast development server with Vite
+- Mobile-first responsive layout
+- Modern glassmorphism UI styled with Tailwind CSS
+
+---
+
+## Tech Stack
 
 - React 18  
 - Vite  
 - Tailwind CSS  
 - WeatherAPI.com  
-- JavaScript (ES2023)  
+- JavaScript (ES2023)
 
 ---
 
-## 📦 Getting Started
+## Setup & Run
 
-### 1. Clone the repository
+Clone the repository, install dependencies, create an API key, add environment variables, and start the dev server:
 
-```bash
 git clone git@github.com:Nlparra/WeatherAppReact.git
 cd WeatherAppReact
+npm install
+Create a .env file in the project root with your WeatherAPI key:
+https://www.weatherapi.com/
+npm run dev
+
+```bash
+
